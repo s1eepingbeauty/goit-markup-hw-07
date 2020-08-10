@@ -1,0 +1,43 @@
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 600px;
+    background: var(--title-light-theme-color);
+    background-image: linear-gradient(
+            to bottom,
+            rgba(47, 48, 58, 0.8),
+            rgba(47, 48, 58, 0.8)
+        ),
+        url('../images/Header-img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-content {
+    max-width: 690px;
+}
+
+.hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36em;
+    letter-spacing: 0.06em;
+    margin-bottom: 30px;
+    color: $text-light-theme-color;
+}
+
+.modal-btn {
+    background-color: $accent-color;
+    color: $text-light-theme-color;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9em;
+    letter-spacing: 0.06em;
+    padding: 10px 32px;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}

@@ -1,0 +1,108 @@
+.footer-logo {
+    font-family: $secondary-font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19em;
+    color: $text-light-theme-color;
+}
+
+.footer-address {
+    margin-right: 69px;
+}
+.footer-address-list {
+    margin-top: 20px;
+}
+.footer-address-list-item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.footer-address-link {
+    line-height: 1.7em;
+    color: $text-light-theme-color;
+}
+.footer-mail-link,
+.footer-tel-link {
+    line-height: 1.7em;
+    color: #ffffff99;
+}
+
+.social-links-title,
+.footer-form-title {
+    font-weight: 700;
+    color: $text-light-theme-color;
+    margin-bottom: 20px;
+}
+
+.social-links-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.social-links-item-link-svg {
+    width: 20px;
+    height: 20px;
+    fill: #afb1b8;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-links-item-link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-links-item-link:hover,
+.social-links-item-link:focus {
+    background-color: $accent-color;
+}
+
+.social-links-item-link:hover .social-links-item-link-svg,
+.social-links-item-link:focus .social-links-item-link-svg {
+    fill: $text-light-theme-color;
+}
+
+.footer-form-container {
+    width: 570px;
+    height: 86px;
+    margin-left: 94px;
+}
+
+.footer-form-box {
+    display: flex;
+}
+
+.footer-form-input {
+    width: 100%;
+    max-width: 358px;
+    height: 50px;
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: transparent;
+    color: $text-light-theme-color;
+    padding-left: 16px;
+    margin-right: 12px;
+}
+
+.footer-form-btn {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.86;
+    letter-spacing: 0.06em;
+    color: $text-light-theme-color;
+    width: 200px;
+    height: 50px;
+    background-color: $accent-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: 0;
+    cursor: pointer;
+}
+
+.footer-form-btn-svg {
+    fill: $text-light-theme-color;
+    margin-left: 10px;
+}

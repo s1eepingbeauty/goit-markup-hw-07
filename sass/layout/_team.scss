@@ -1,0 +1,62 @@
+.team-card-list {
+    justify-content: space-between;
+}
+
+.team-card-item {
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 1px 3px rgba(0, 0, 0, 0.12);
+    border-radius: 0px 0px 4px 4px;
+    text-align: center;
+    width: 270px;
+}
+
+.team-card-item img {
+    margin-bottom: 30px;
+}
+
+.team-social-links-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.team-social-links-item {
+    margin-bottom: 24px;
+}
+
+.team-social-links-item-link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team-social-links-item-link-svg {
+    width: 20px;
+    height: 20px;
+    fill: #afb1b8;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team-social-links-item-link:hover .team-social-links-item-link-svg,
+.team-social-links-item-link:focus .team-social-links-item-link-svg {
+    fill: $text-light-theme-color;
+}
+
+.team-social-links-item-link:hover,
+.team-social-links-item-link:focus {
+    background-color: $accent-color;
+}
+
+.team-card-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19em;
+    color: $text-dark-theme-color;
+    margin-bottom: 10px;
+}
+
+.team-card-profession {
+    font-size: 16px;
+    line-height: 1.19em;
+    color: $desc-color;
+    margin-bottom: 16px;
+}

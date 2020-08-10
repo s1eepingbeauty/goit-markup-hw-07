@@ -1,0 +1,81 @@
+.header {
+    height: 80px;
+    justify-content: space-between;
+}
+
+.logo {
+    font-family: $secondary-font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19em;
+    color: #000000;
+    margin-top: 24px;
+    margin-right: 85px;
+}
+
+.navigation-list-item,
+.navigation-list-link {
+    align-items: center;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    margin-top: 32px;
+}
+
+.navigation-list-link {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navigation-list-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.header-mail {
+    margin-right: 30px;
+}
+
+.header-mail-link-svg,
+.header-tel-link-svg {
+    fill: $desc-color;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-list svg {
+    margin-right: 10px;
+}
+
+.header-mail-link,
+.header-tel-link {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: $desc-color;
+    margin-top: 32px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navigation-list-link:hover,
+.navigation-list-link:focus,
+.header-mail-link:hover,
+.header-mail-link:focus,
+.header-tel-link:hover,
+.header-tel-link:focus {
+    color: $accent-color;
+}
+
+.active-page::after {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 4px;
+    background-color: $accent-color;
+    border-radius: 2px;
+    margin-top: 29px;
+}
+
+.header-mail-link:hover .header-mail-link-svg,
+.header-tel-link:hover .header-tel-link-svg,
+.header-mail-link:focus .header-mail-link-svg,
+.header-tel-link:focus .header-tel-link-svg {
+    fill: $accent-color;
+}
