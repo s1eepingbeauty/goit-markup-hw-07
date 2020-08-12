@@ -1,25 +1,24 @@
 .what-we-do {
     margin-top: 0;
-}
 
-.what-we-do-item {
-    width: 370px;
-    position: relative;
-}
+    &-item {
+        width: 370px;
+        position: relative;
+    }
 
-.what-we-do-item:not(:last-child) {
-    margin-right: 30px;
-}
+    &-item:not(:last-child) {
+        margin-right: 30px;
+    }
 
-.what-we-do-item-title {
-    font-weight: 700;
-    line-height: 1.15em;
-    text-align: center;
-    background: rgba(47, 48, 58, 0.8);
-    color: $text-light-theme-color;
-    padding-top: 27px;
-    padding-bottom: 27px;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
+    &-item-title {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        @extend %uppercase;
+        @include font($fw: 700, $lh: 1.15em, $fc: $text-light-theme-color);
+        background: rgba(47, 48, 58, 0.8);
+        padding-top: 27px;
+        padding-bottom: 27px;
+    }
 }

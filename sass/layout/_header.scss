@@ -1,70 +1,71 @@
 .header {
     height: 80px;
     justify-content: space-between;
-}
 
-.logo {
-    @include font($secondary-font, 26px, 700, 1.1em, $fc: #000000);
-    margin-top: 24px;
-    margin-right: 85px;
-}
+    &-list {
+        @extend %list;
+        & svg {
+            margin-right: 10px;
+        }
+    }
 
-.navigation-list-item,
-.navigation-list-link {
-    @include font($fw: 500, $ls: 0.02em);
-    align-items: center;
-    margin-top: 32px;
-}
+    &-mail-link,
+    &-tel-link {
+        @include font($fw: 500, $ls: 0.02em, $fc: $desc-color);
+        @extend %align-center;
+        margin-top: 32px;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-.header-mail-link,
-.header-tel-link {
-    @include font($fw: 500, $ls: 0.02em, $fc: $desc-color);
-    margin-top: 32px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+        &:hover,
+        &:focus {
+            color: $accent-color;
+        }
 
-.navigation-list-link {
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+        &-svg {
+            fill: $desc-color;
+            transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    }
 
-.navigation-list-item:not(:last-child) {
-    margin-right: 50px;
-}
+    &-mail {
+        margin-right: 30px;
 
-.header-mail {
-    margin-right: 30px;
-}
+        &-link {
+            &:hover &-svg,
+            &:focus &-svg {
+                fill: $accent-color;
+            }
+        }
+    }
 
-.header-mail-link-svg,
-.header-tel-link-svg {
-    fill: $desc-color;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header-list svg {
-    margin-right: 10px;
-}
-
-.navigation-list-link,
-.header-mail-link,
-.header-tel-link {
-    &:hover,
-    &:focus {
-        color: $accent-color;
+    &-tel {
+        &-link {
+            &:hover &-svg,
+            &:focus &-svg {
+                fill: $accent-color;
+            }
+        }
     }
 }
 
-.header-mail-link {
-    &:hover &-svg,
-    &:focus &-svg {
-        fill: $accent-color;
-    }
-}
+.navigation-list {
+    @extend %list;
 
-.header-tel-link {
-    &:hover &-svg,
-    &:focus &-svg {
-        fill: $accent-color;
+    &-item,
+    &-link {
+        @include font($fw: 500, $ls: 0.02em);
+        align-items: center;
+        margin-top: 32px;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+            color: $accent-color;
+        }
+    }
+
+    &-item:not(:last-child) {
+        margin-right: 50px;
     }
 }
 

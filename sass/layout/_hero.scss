@@ -1,11 +1,8 @@
 .hero {
-    /*display: flex;
-    justify-content: center;
-    align-items: center;*/
     @extend %align-center;
     text-align: center;
     height: 600px;
-    background: var(--title-light-theme-color);
+    background-color: $title-light-theme-color;
     background-image: linear-gradient(
             to bottom,
             rgba(47, 48, 58, 0.8),
@@ -14,24 +11,20 @@
         url('../images/Header-img.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-}
 
-.hero-content {
-    max-width: 690px;
-}
+    &-title {
+        @extend %uppercase;
+        @include font(
+            $fs: 44px,
+            $fw: 900,
+            $lh: 1.36em,
+            $ls: 0.06em,
+            $fc: $text-light-theme-color
+        );
+        margin-bottom: 30px;
+    }
 
-.hero-title {
-    /*font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36em;
-    letter-spacing: 0.06em;
-    color: $text-light-theme-color;*/
-    @include font(
-        $fs: 44px,
-        $fw: 900,
-        $lh: 1.36em,
-        $ls: 0.06em,
-        $fc: $text-light-theme-color
-    );
-    margin-bottom: 30px;
+    &-content {
+        max-width: 690px;
+    }
 }

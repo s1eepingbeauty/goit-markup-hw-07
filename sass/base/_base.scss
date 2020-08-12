@@ -39,6 +39,8 @@ span {
 
 a {
     color: $text-dark-theme-color;
+    text-decoration: none;
+    font-style: normal;
 }
 
 footer {
@@ -49,21 +51,6 @@ footer {
 
 .accent {
     color: $accent-color;
-}
-
-.link {
-    text-decoration: none;
-    font-style: normal;
-}
-
-.list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.uppercase {
-    text-transform: uppercase;
 }
 
 .hide-item {

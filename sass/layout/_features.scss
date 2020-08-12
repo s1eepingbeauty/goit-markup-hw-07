@@ -13,6 +13,7 @@
         margin-right: 0;
     }
     &-item div {
+        @extend %align-center;
         background: #f5f4fa;
         border-radius: 4px;
         margin-bottom: 30px;
@@ -21,6 +22,7 @@
 }
 
 .features-item-title {
+    @extend %uppercase;
     @include font($fw: 700, $fc: $text-dark-theme-color);
     margin-bottom: 10px;
 }
