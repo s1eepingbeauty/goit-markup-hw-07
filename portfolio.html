@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Web Studio</title>
-        <link rel="stylesheet" href="./css/portfolio.css" />
+        <link rel="stylesheet" href="./css/portfolio.min.css" />
         <link
             href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
             rel="stylesheet"
@@ -13,21 +13,21 @@
 
     <body>
         <header>
-            <section class="header container flex-wrap">
+            <section class="header">
                 <!-- НАВИГАЦИЯ -->
                 <h2 class="hide-item" hidden>Навигиция</h2>
-                <nav class="navigation flex-wrap">
+                <nav class="navigation">
                     <a
-                        class="logo link"
+                        class="logo"
                         href="index.html"
                         aria-label="Ссылка на главную страницу сайта"
                         lang="en"
                         ><span class="accent">Web</span> Studio</a
                     >
-                    <ul class="navigation-list list flex-wrap">
+                    <ul class="navigation-list">
                         <li class="navigation-list-item">
                             <a
-                                class="navigation-list-link link"
+                                class="navigation-list-link"
                                 href="index.html"
                                 aria-label="Ссылка на Студию"
                                 >Студия</a
@@ -35,7 +35,7 @@
                         </li>
                         <li class="navigation-list-item active-page">
                             <a
-                                class="navigation-list-link link accent"
+                                class="accent navigation-list-link"
                                 href="portfolio.html"
                                 aria-label="Ссылка на Портфолио"
                                 >Портфолио</a
@@ -43,7 +43,7 @@
                         </li>
                         <li class="navigation-list-item">
                             <a
-                                class="navigation-list-link link"
+                                class="navigation-list-link"
                                 href=""
                                 aria-label="Ссылка на Контакты"
                                 >Контакты</a
@@ -54,11 +54,11 @@
 
                 <!-- КОНТАКТЫ -->
 
-                <address class="header-address flex-wrap">
-                    <ul class="header-list list flex-wrap">
+                <address class="header-address">
+                    <ul class="header-list">
                         <li class="header-mail">
                             <a
-                                class="header-mail-link link flex-wrap center"
+                                class="header-mail-link"
                                 href="mailto:info@devstudio.com"
                                 target="_blank"
                             >
@@ -74,7 +74,7 @@
                         </li>
                         <li class="header-tel">
                             <a
-                                class="header-tel-link link flex-wrap center"
+                                class="header-tel-link"
                                 href="tel:+380961111111"
                                 target="_blank"
                             >
@@ -97,33 +97,33 @@
             <!-- СОРТИРОВКА ПРОЕКТОВ -->
             <section class="section">
                 <h2 class="hide-item" hidden>Сортировка проектов</h2>
-                <div class="filter-projects container center">
-                    <ul class="filter-projects-list list flex-wrap">
+                <div class="filter-projects">
+                    <ul class="filter-projects-list">
                         <li class="filter-projects-item">
                             <button
-                                class="filter-button accent-filter-button"
+                                class="filter-btn filter-btn-accent"
                                 type="button"
                             >
                                 Все
                             </button>
                         </li>
                         <li class="filter-projects-item">
-                            <button class="filter-button" type="button">
+                            <button class="filter-btn" type="button">
                                 Веб-сайты
                             </button>
                         </li>
                         <li class="filter-projects-item">
-                            <button class="filter-button" type="button">
+                            <button class="filter-btn" type="button">
                                 Приложения
                             </button>
                         </li>
                         <li class="filter-projects-item">
-                            <button class="filter-button" type="button">
+                            <button class="filter-btn" type="button">
                                 Дизайн
                             </button>
                         </li>
                         <li class="filter-projects-item">
-                            <button class="filter-button" type="button">
+                            <button class="filter-btn" type="button">
                                 Маркетинг
                             </button>
                         </li>
@@ -404,27 +404,27 @@
         <!-- ПОДВАЛ -->
 
         <footer>
-            <section class="footer container flex-wrap">
+            <section class="footer">
                 <h2 class="hide-item" hidden>Подвал</h2>
                 <address class="footer-address">
                     <a
-                        class="footer-logo link"
+                        class="footer-logo"
                         href="index.html"
                         aria-label="Ссылка на главную страницу сайта"
                         lang="en"
                         ><span class="accent">Web</span> Studio</a
                     >
-                    <ul class="footer-address-list list">
+                    <ul class="footer-address-list">
                         <li class="footer-address-list-item">
                             <a
-                                class="link footer-address-link"
+                                class="footer-address-link"
                                 href="https://goo.gl/maps/JWdkFvdbj5zFCxJH9"
                                 >г. Киев, пр-т Леси Украинки, 26</a
                             >
                         </li>
                         <li class="footer-address-list-item">
                             <a
-                                class="link footer-mail-link"
+                                class="footer-mail-link"
                                 href="mailto:info@example.com"
                                 >info@example.com</a
                             >
@@ -440,13 +440,13 @@
                 </address>
 
                 <div class="social-links">
-                    <h3 class="social-links-title uppercase">
+                    <h3 class="social-links-title">
                         Присоединяйтесь
                     </h3>
-                    <ul class="social-links list flex-wrap">
+                    <ul class="social-links-list">
                         <li class="social-links-item">
                             <a
-                                class="social-links-item-link link center"
+                                class="social-links-item-link"
                                 href=""
                                 aria-label="Ссылка на Инстаграм"
                                 ><svg class="social-links-item-link-svg">
@@ -457,7 +457,7 @@
                         </li>
                         <li class="social-links-item">
                             <a
-                                class="social-links-item-link link center"
+                                class="social-links-item-link"
                                 href=""
                                 aria-label="Ссылка на Твитер"
                                 ><svg class="social-links-item-link-svg">
@@ -468,7 +468,7 @@
                         </li>
                         <li class="social-links-item">
                             <a
-                                class="social-links-item-link link center"
+                                class="social-links-item-link"
                                 href=""
                                 aria-label="Ссылка на Фейсбук"
                                 ><svg class="social-links-item-link-svg">
@@ -479,7 +479,7 @@
                         </li>
                         <li class="social-links-item">
                             <a
-                                class="social-links-item-link link center"
+                                class="social-links-item-link"
                                 href=""
                                 aria-label="Ссылка на Линкедин"
                                 ><svg class="social-links-item-link-svg">
@@ -491,7 +491,7 @@
                     </ul>
                 </div>
                 <div class="footer-form-container">
-                    <h3 class="footer-form-title uppercase">
+                    <h3 class="footer-form-title">
                         Подпишитесь на рассылку
                     </h3>
                     <form class="footer-form" action="#">
@@ -503,10 +503,7 @@
                                 id="footer-user-email"
                                 placeholder="E-mail"
                             />
-                            <button
-                                class="footer-form-btn center"
-                                type="submit"
-                            >
+                            <button class="footer-form-btn" type="submit">
                                 Подписаться
                                 <svg
                                     class="footer-form-btn-svg"
@@ -521,6 +518,5 @@
                 </div>
             </section>
         </footer>
-        <script src="./js/modal.js"></script>
     </body>
 </html>

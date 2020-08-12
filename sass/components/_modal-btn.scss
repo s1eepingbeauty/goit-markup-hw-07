@@ -1,10 +1,4 @@
 .modal-btn {
-    background-color: $accent-color;
-    /*font-weight: 700;
-    font-size: 16px;
-    line-height: 1.9em;
-    letter-spacing: 0.06em;
-    color: $text-light-theme-color;*/
     @include font(
         $fw: 700,
         $fs: 16px,
@@ -12,9 +6,10 @@
         $ls: 0.06em,
         $fc: $text-light-theme-color
     );
-    padding: 10px 32px;
+    background-color: $accent-color;
     border: 0;
     border-radius: 4px;
-    cursor: pointer;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    padding: 10px 32px;
 }

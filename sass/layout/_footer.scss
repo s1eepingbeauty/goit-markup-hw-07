@@ -1,9 +1,6 @@
 .footer {
     @extend %flex-wrap;
     @extend %container;
-    background-color: #2f303a;
-    padding-top: 60px;
-    padding-bottom: 60px;
 
     &-logo {
         @include font(
@@ -51,6 +48,7 @@
         }
 
         &-btn {
+            @extend %align-center;
             @include font(
                 $fs: 16px,
                 $fw: 700,
