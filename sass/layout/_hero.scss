@@ -1,7 +1,8 @@
 .hero {
-    display: flex;
+    /*display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;*/
+    @extend %align-center;
     text-align: center;
     height: 600px;
     background: var(--title-light-theme-color);
@@ -20,24 +21,17 @@
 }
 
 .hero-title {
-    font-weight: 900;
+    /*font-weight: 900;
     font-size: 44px;
     line-height: 1.36em;
     letter-spacing: 0.06em;
+    color: $text-light-theme-color;*/
+    @include font(
+        $fs: 44px,
+        $fw: 900,
+        $lh: 1.36em,
+        $ls: 0.06em,
+        $fc: $text-light-theme-color
+    );
     margin-bottom: 30px;
-    color: $text-light-theme-color;
-}
-
-.modal-btn {
-    background-color: $accent-color;
-    color: $text-light-theme-color;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.9em;
-    letter-spacing: 0.06em;
-    padding: 10px 32px;
-    border: 0;
-    border-radius: 4px;
-    cursor: pointer;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
