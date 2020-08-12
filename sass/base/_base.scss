@@ -11,10 +11,11 @@ html {
 body {
     margin: 0;
     background-color: $title-dark-theme-color;
-    font-family: $main-font;
+    /*font-family: $main-font;
     font-size: 14px;
     line-height: 1.14em;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.03em;*/
+    @include font();
     color: $text-dark-theme-color;
 }
 

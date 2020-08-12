@@ -22,6 +22,16 @@
     margin-top: 32px;
 }
 
+.header-mail-link,
+.header-tel-link {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: $desc-color;
+    margin-top: 32px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .navigation-list-link {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -44,23 +54,27 @@
     margin-right: 10px;
 }
 
+.navigation-list-link,
 .header-mail-link,
 .header-tel-link {
-    font-size: 14px;
-    font-weight: 500;
-    letter-spacing: 0.02em;
-    color: $desc-color;
-    margin-top: 32px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
 }
 
-.navigation-list-link:hover,
-.navigation-list-link:focus,
-.header-mail-link:hover,
-.header-mail-link:focus,
-.header-tel-link:hover,
-.header-tel-link:focus {
-    color: $accent-color;
+.header-mail-link {
+    &:hover &-svg,
+    &:focus &-svg {
+        fill: $accent-color;
+    }
+}
+
+.header-tel-link {
+    &:hover &-svg,
+    &:focus &-svg {
+        fill: $accent-color;
+    }
 }
 
 .active-page::after {
@@ -71,11 +85,4 @@
     background-color: $accent-color;
     border-radius: 2px;
     margin-top: 29px;
-}
-
-.header-mail-link:hover .header-mail-link-svg,
-.header-tel-link:hover .header-tel-link-svg,
-.header-mail-link:focus .header-mail-link-svg,
-.header-tel-link:focus .header-tel-link-svg {
-    fill: $accent-color;
 }
