@@ -337,12 +337,12 @@ template {
   display: none;
 }
 
-.header, .header-address, .header-list, .header-mail-link, .header-tel-link, .navigation, .navigation-list, .features-list, .what-we-do-list, .team-card-list, .team-social-links, .footer, .social-links-list {
+.header, .header-address, .header-list, .header-mail-link, .header-tel-link, .navigation, .navigation-list, .features-list, .what-we-do-list, .team-card-list, .team-social-links, .clients-list, .footer, .social-links-list {
   display: flex;
   flex-wrap: wrap;
 }
 
-.header-mail-link, .header-tel-link, .hero, .features-list-item div, .team-social-links, .team-social-links-item-link, .social-links-item-link {
+.header-mail-link, .header-tel-link, .hero, .features-list-item div, .team-social-links, .team-social-links-item-link, .clients-list, .clients-list-item-link, .social-links-item-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -352,13 +352,13 @@ template {
   text-transform: uppercase;
 }
 
-.header-list, .navigation-list, .features-list, .what-we-do-list, .team-card-list, .team-social-links, .footer-address-list, .social-links-list {
+.header-list, .navigation-list, .features-list, .what-we-do-list, .team-card-list, .team-social-links, .clients-list, .footer-address-list, .social-links-list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.header, .features-content, .what-we-do-content, .team-content, .footer {
+.header, .features-content, .what-we-do-content, .team-content, .clients-content, .footer {
   margin: 0 auto;
   width: 1200px;
   padding-left: 15px;
@@ -929,8 +929,7 @@ a {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients-list-item-link:hover,
-.clients-list-item-link:focus {
+.clients-list-item-link:hover, .clients-list-item-link:focus {
   border: 1px solid #2196f3;
 }
 
