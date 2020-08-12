@@ -337,7 +337,7 @@ template {
   display: none;
 }
 
-.header, .header-address, .header-list, .header-mail-link, .header-tel-link, .navigation, .navigation-list, .features-list, .footer, .social-links-list {
+.header, .header-address, .header-list, .header-mail-link, .header-tel-link, .navigation, .navigation-list, .features-list, .what-we-do-list, .footer, .social-links-list {
   display: flex;
   flex-wrap: wrap;
 }
@@ -352,13 +352,13 @@ template {
   text-transform: uppercase;
 }
 
-.header-list, .navigation-list, .features-list, .footer-address-list, .social-links-list {
+.header-list, .navigation-list, .features-list, .what-we-do-list, .footer-address-list, .social-links-list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.header, .features-content, .footer {
+.header, .features-content, .what-we-do-content, .footer {
   margin: 0 auto;
   width: 1200px;
   padding-left: 15px;
@@ -821,12 +821,8 @@ a {
 }
 
 .what-we-do-item {
-  width: 370px;
   position: relative;
-}
-
-.what-we-do-item:not(:last-child) {
-  margin-right: 30px;
+  width: 370px;
 }
 
 .what-we-do-item-title {
@@ -843,6 +839,10 @@ a {
   background: rgba(47, 48, 58, 0.8);
   padding-top: 27px;
   padding-bottom: 27px;
+}
+
+.what-we-do-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .team-card-list {
