@@ -10,17 +10,8 @@ html {
 
 body {
     margin: 0;
-    background-color: $title-dark-theme-color;
-    /*font-family: $main-font;
-    font-size: 14px;
-    line-height: 1.14em;
-    letter-spacing: 0.03em;
-    color: $text-dark-theme-color;*/
     @include font();
-}
-
-header {
-    border-bottom: 1px solid #ececec;
+    background-color: $title-dark-theme-color;
 }
 
 img {
@@ -43,12 +34,6 @@ a {
     font-style: normal;
 }
 
-footer {
-    background-color: #2f303a;
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
-
 .accent {
     color: $accent-color;
 }
@@ -62,15 +47,4 @@ footer {
     height: 1px !important;
     width: 1px !important;
     overflow: hidden;
-}
-
-.flex-wrap {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }

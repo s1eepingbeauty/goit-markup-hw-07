@@ -1,14 +1,13 @@
 @import './utils/normalize';
 @import './utils/variables';
-@import './utils/placeholders';
 @import './utils/mixins';
+@import './utils/placeholders';
 @import './base/base';
 
 @import './components/logo';
-@import './components/container';
 @import './components/section';
-@import './components/description';
 @import './components/modal-btn';
+@import './components/active-page';
 @import './components/contact-form';
 
 @import './layout/header';
