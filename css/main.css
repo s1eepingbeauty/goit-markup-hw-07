@@ -337,7 +337,7 @@ template {
   display: none;
 }
 
-.header, .header-address, .header-list, .header-mail-link, .header-tel-link, .navigation, .navigation-list, .footer, .social-links-list {
+.header, .header-address, .header-list, .header-mail-link, .header-tel-link, .navigation, .navigation-list, .features-list, .footer, .social-links-list {
   display: flex;
   flex-wrap: wrap;
 }
@@ -348,21 +348,30 @@ template {
   align-items: center;
 }
 
-.hero-title, .features-item-title, .what-we-do-item-title, .footer-form-title, .social-links-title {
+.hero-title, .features-list-item-title, .what-we-do-item-title, .footer-form-title, .social-links-title {
   text-transform: uppercase;
 }
 
-.header-list, .navigation-list, .footer-address-list, .social-links-list {
+.header-list, .navigation-list, .features-list, .footer-address-list, .social-links-list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.header, .footer {
+.header, .features-content, .footer {
   margin: 0 auto;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.features-list-item p {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.7em;
+  letter-spacing: 0.03em;
+  color: #757575;
 }
 
 *,
@@ -440,9 +449,11 @@ a {
 }
 
 .main-section-titles {
-  font-weight: 700;
+  font-family: "Roboto", sans-serif;
   font-size: 36px;
+  font-weight: 700;
   line-height: 1.17em;
+  letter-spacing: 0.03em;
   color: #212121;
   text-align: center;
   margin-bottom: 50px;
@@ -775,8 +786,18 @@ a {
 
 .features-list-item {
   width: 270px;
-  margin-right: 30px;
   text-align: left;
+  margin-right: 30px;
+}
+
+.features-list-item-title {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14em;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin-bottom: 10px;
 }
 
 .features-list-item-svg {
@@ -793,16 +814,6 @@ a {
   border-radius: 4px;
   margin-bottom: 30px;
   height: 120px;
-}
-
-.features-item-title {
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 1.14em;
-  letter-spacing: 0.03em;
-  color: #212121;
-  margin-bottom: 10px;
 }
 
 .what-we-do {
