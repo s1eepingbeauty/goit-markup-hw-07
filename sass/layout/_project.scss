@@ -4,8 +4,7 @@
     }
 
     &-list {
-        @extend %list;
-        @extend %flex-wrap;
+        @extend %list, %flex-wrap;
 
         &-item {
             width: 370px;

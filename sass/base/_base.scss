@@ -10,7 +10,7 @@ html {
 
 body {
     margin: 0;
-    @include font();
+    @include font;
     background-color: $title-dark-theme-color;
 }
 
@@ -29,9 +29,9 @@ span {
 }
 
 a {
-    color: $text-dark-theme-color;
     text-decoration: none;
     font-style: normal;
+    color: $text-dark-theme-color;
 }
 
 footer {

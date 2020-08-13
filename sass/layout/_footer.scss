@@ -1,6 +1,5 @@
 .footer {
-    @extend %flex-wrap;
-    @extend %container;
+    @extend %flex-wrap, %container;
 
     &-logo {
         @include font(
@@ -92,8 +91,7 @@
 
 .social-links {
     &-list {
-        @extend %list;
-        @extend %flex-wrap;
+        @extend %list, %flex-wrap;
     }
 
     &-title {

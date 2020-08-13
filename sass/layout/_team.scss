@@ -5,8 +5,7 @@
 
     &-card {
         &-list {
-            @extend %list;
-            @extend %flex-wrap;
+            @extend %list, %flex-wrap;
             justify-content: space-between;
         }
 
@@ -40,9 +39,7 @@
     }
 
     &-social-links {
-        @extend %list;
-        @extend %flex-wrap;
-        @extend %align-center;
+        @extend %list, %flex-wrap, %align-center;
 
         &-item {
             margin-bottom: 24px;

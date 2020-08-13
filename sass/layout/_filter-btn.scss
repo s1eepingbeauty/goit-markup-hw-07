@@ -1,11 +1,9 @@
 .filter {
     &-projects {
-        @extend %container;
-        @extend %align-center;
+        @extend %container, %align-center;
 
         &-list {
-            @extend %list;
-            @extend %flex-wrap;
+            @extend %list, %flex-wrap;
         }
 
         &-item:not(:last-child) {

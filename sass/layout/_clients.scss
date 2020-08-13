@@ -4,9 +4,7 @@
     }
 
     &-list {
-        @extend %list;
-        @extend %flex-wrap;
-        @extend %align-center;
+        @extend %list, %flex-wrap, %align-center;
 
         &-item {
             width: 170px;
