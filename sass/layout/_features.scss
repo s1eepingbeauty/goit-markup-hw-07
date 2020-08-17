@@ -13,7 +13,6 @@
             &-title {
                 @extend %uppercase;
                 @include font($fw: 700);
-                color: $text-dark-theme-color;
                 margin-bottom: 10px;
             }
 

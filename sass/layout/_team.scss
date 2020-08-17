@@ -22,7 +22,6 @@
         }
         &-name {
             @include font($fs: 16px, $fw: 500, $lh: 1.19em);
-            color: $text-dark-theme-color;
             margin-bottom: 10px;
         }
 

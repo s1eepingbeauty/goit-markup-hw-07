@@ -11,6 +11,7 @@ html {
 body {
     margin: 0;
     @include font;
+    color: $text-dark-theme-color;
     background-color: $title-dark-theme-color;
 }
 

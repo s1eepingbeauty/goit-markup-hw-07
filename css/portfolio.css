@@ -382,6 +382,7 @@ body {
   font-weight: 400;
   line-height: 1.14em;
   letter-spacing: 0.03em;
+  color: #212121;
   background-color: #ffffff;
 }
 
@@ -450,7 +451,6 @@ footer {
   font-weight: 700;
   line-height: 1.17em;
   letter-spacing: 0.03em;
-  color: #212121;
   text-align: center;
   margin-bottom: 50px;
 }
@@ -537,7 +537,6 @@ footer {
   font-weight: 500;
   line-height: 1.6em;
   letter-spacing: 0.03em;
-  color: #212121;
   background-color: #f5f4fa;
   border: 0;
   border-radius: 4px;
@@ -592,16 +591,19 @@ footer {
 }
 
 .project-name {
-  font-weight: 700;
+  font-family: "Roboto", sans-serif;
   font-size: 18px;
+  font-weight: 700;
   line-height: 2em;
   letter-spacing: 0.06em;
-  color: #212121;
 }
 
 .project-type {
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
+  font-weight: 400;
   line-height: 1.9em;
+  letter-spacing: 0.03em;
   color: #757575;
 }
 

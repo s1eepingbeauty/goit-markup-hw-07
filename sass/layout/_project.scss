@@ -43,16 +43,11 @@
     }
 
     &-name {
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 2em;
-        letter-spacing: 0.06em;
-        color: $text-dark-theme-color;
+        @include font($fs: 18px, $fw: 700, $lh: 2em, $ls: 0.06em);
     }
 
     &-type {
-        font-size: 16px;
-        line-height: 1.9em;
+        @include font($fs: 16px, $lh: 1.9em);
         color: $desc-color;
     }
 
