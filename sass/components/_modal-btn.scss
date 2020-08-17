@@ -1,11 +1,6 @@
 .modal-btn {
-    @include font(
-        $fw: 700,
-        $fs: 16px,
-        $lh: 1.9em,
-        $ls: 0.06em,
-        $fc: $text-light-theme-color
-    );
+    @include font($fw: 700, $fs: 16px, $lh: 1.9em, $ls: 0.06em);
+    color: $text-light-theme-color;
     background-color: $accent-color;
     border: 0;
     border-radius: 4px;

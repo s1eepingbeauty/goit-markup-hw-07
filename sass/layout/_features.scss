@@ -12,7 +12,8 @@
 
             &-title {
                 @extend %uppercase;
-                @include font($fw: 700, $fc: $text-dark-theme-color);
+                @include font($fw: 700);
+                color: $text-dark-theme-color;
                 margin-bottom: 10px;
             }
 

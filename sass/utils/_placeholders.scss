@@ -27,5 +27,6 @@
 }
 
 %description {
-    @include font($lh: 1.7em, $fc: $desc-color);
+    @include font($lh: 1.7em);
+    color: $desc-color;
 }

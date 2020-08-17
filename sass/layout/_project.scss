@@ -64,7 +64,8 @@
         height: 100%;
 
         @extend %align-center;
-        @include font($fs: 18px, $lh: 1.55em, $fc: $text-light-theme-color);
+        @include font($fs: 18px, $lh: 1.55em);
+        color: $text-light-theme-color;
         background-color: rgba(33, 150, 243, 0.9);
         padding-left: 24px;
         padding-right: 24px;

@@ -14,13 +14,8 @@
 
     &-title {
         @extend %uppercase;
-        @include font(
-            $fs: 44px,
-            $fw: 900,
-            $lh: 1.36em,
-            $ls: 0.06em,
-            $fc: $text-light-theme-color
-        );
+        @include font($fs: 44px, $fw: 900, $lh: 1.36em, $ls: 0.06em);
+        color: $text-light-theme-color;
         margin-bottom: 30px;
     }
 

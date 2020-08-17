@@ -1,5 +1,6 @@
 .logo {
-    @include font($secondary-font, 26px, 700, 1.1em, $fc: #000000);
+    @include font($secondary-font, 26px, 700, 1.1em);
+    color: #000000;
     margin-top: 24px;
     margin-right: 85px;
 }

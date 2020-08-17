@@ -13,12 +13,8 @@
 
     &-btn {
         height: 38px;
-        @include font(
-            $fs: 16px,
-            $fw: 500,
-            $lh: 1.6em,
-            $fc: $text-dark-theme-color
-        );
+        @include font($fs: 16px, $fw: 500, $lh: 1.6em);
+        color: $text-dark-theme-color;
         background-color: #f5f4fa;
         border: 0;
         border-radius: 4px;

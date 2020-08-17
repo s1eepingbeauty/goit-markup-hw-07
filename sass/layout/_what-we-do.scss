@@ -18,7 +18,8 @@
             width: 100%;
             text-align: center;
             @extend %uppercase;
-            @include font($fw: 700, $lh: 1.15em, $fc: $text-light-theme-color);
+            @include font($fw: 700, $lh: 1.15em);
+            color: $text-light-theme-color;
             background: rgba(47, 48, 58, 0.8);
             padding-top: 27px;
             padding-bottom: 27px;

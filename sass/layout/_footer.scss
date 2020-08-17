@@ -2,13 +2,8 @@
     @extend %flex-wrap, %container;
 
     &-logo {
-        @include font(
-            $secondary-font,
-            26px,
-            700,
-            1.19em,
-            $fc: $text-light-theme-color
-        );
+        @include font($secondary-font, 26px, 700, 1.19em);
+        color: $text-light-theme-color;
     }
 
     &-address {
@@ -24,18 +19,21 @@
         }
 
         &-link {
-            @include font($lh: 1.7em, $fc: $text-light-theme-color);
+            @include font($lh: 1.7em);
+            color: $text-light-theme-color;
         }
     }
 
     &-mail-link,
     &-tel-link {
-        @include font($lh: 1.7em, $fc: #ffffff99);
+        @include font($lh: 1.7em);
+        color: #ffffff99;
     }
 
     &-form-title {
         @extend %uppercase;
-        @include font($fw: 700, $fc: $text-light-theme-color);
+        @include font($fw: 700);
+        color: $text-light-theme-color;
         margin-bottom: 20px;
     }
 
@@ -48,15 +46,10 @@
 
         &-btn {
             @extend %align-center;
-            @include font(
-                $fs: 16px,
-                $fw: 700,
-                $lh: 1.86em,
-                $ls: 0.06em,
-                $fc: $text-light-theme-color
-            );
             width: 200px;
             height: 50px;
+            @include font($fs: 16px, $fw: 700, $lh: 1.86em, $ls: 0.06em);
+            color: $text-light-theme-color;
             background-color: $accent-color;
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
             border-radius: 4px;
@@ -96,7 +89,8 @@
 
     &-title {
         @extend %uppercase;
-        @include font($fw: 700, $fc: $text-light-theme-color);
+        @include font($fw: 700);
+        color: $text-light-theme-color;
         margin-bottom: 20px;
     }
 
