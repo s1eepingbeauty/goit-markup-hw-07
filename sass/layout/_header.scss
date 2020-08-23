@@ -1,70 +1,58 @@
 .header {
-    @extend %container, %flex-wrap;
-    height: 80px;
-    border-bottom: 1px solid #ececec;
+  height: 80px;
+  border-bottom: 1px solid #ececec;
+
+  & div {
     justify-content: space-between;
+  }
 
-    &-address {
-        @extend %flex-wrap;
+  &-list svg {
+    margin-right: 10px;
+  }
+
+  &-mail {
+    margin-right: 30px;
+  }
+
+  &-mail-link,
+  &-tel-link {
+    @include font($fw: 500, $ls: 0.02em);
+    color: $desc-color;
+    margin-top: 32px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
     }
 
-    &-list {
-        @extend %list, %flex-wrap;
-        & svg {
-            margin-right: 10px;
-        }
+    &-svg {
+      fill: $desc-color;
+      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    &-mail {
-        margin-right: 30px;
+    &:hover &-svg,
+    &:focus &-svg {
+      fill: $accent-color;
     }
-
-    &-mail-link,
-    &-tel-link {
-        @extend %align-center, %flex-wrap;
-        @include font($fw: 500, $ls: 0.02em);
-        color: $desc-color;
-        margin-top: 32px;
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-        &:hover,
-        &:focus {
-            color: $accent-color;
-        }
-
-        &-svg {
-            fill: $desc-color;
-            transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        &:hover &-svg,
-        &:focus &-svg {
-            fill: $accent-color;
-        }
-    }
+  }
 }
 
-.navigation {
-    @extend %flex-wrap;
+.navigation-list {
+  &-item,
+  &-link {
+    @include font($fw: 500, $ls: 0.02em);
+    align-items: center;
+    margin-top: 32px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    &-list {
-        @extend %list, %flex-wrap;
-
-        &-item,
-        &-link {
-            @include font($fw: 500, $ls: 0.02em);
-            align-items: center;
-            margin-top: 32px;
-            transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-            &:hover,
-            &:focus {
-                color: $accent-color;
-            }
-        }
-
-        &-item:not(:last-child) {
-            margin-right: 50px;
-        }
+    &:hover,
+    &:focus {
+      color: $accent-color;
     }
+  }
+
+  &-item:not(:last-child) {
+    margin-right: 50px;
+  }
 }

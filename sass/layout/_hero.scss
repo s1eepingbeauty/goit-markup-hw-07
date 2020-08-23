@@ -1,25 +1,18 @@
 .hero {
-    @extend %align-center;
-    text-align: center;
-    height: 600px;
-    background-color: $title-light-theme-color;
-    background-image: linear-gradient(
-            to bottom,
-            rgba(47, 48, 58, 0.8),
-            rgba(47, 48, 58, 0.8)
-        ),
-        url('../images/Header-img.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+  text-align: center;
+  height: 600px;
+  background-color: $title-light-theme-color;
+  background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url('../images/Header-img.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 
-    &-title {
-        @extend %uppercase;
-        @include font($fs: 44px, $fw: 900, $lh: 1.36em, $ls: 0.06em);
-        color: $text-light-theme-color;
-        margin-bottom: 30px;
-    }
+  &-title {
+    @include font($fs: 44px, $fw: 900, $lh: 1.364, $ls: 0.06em);
+    color: $text-light-theme-color;
+    margin-bottom: 30px;
+  }
 
-    &-content {
-        max-width: 690px;
-    }
+  &-content {
+    max-width: 690px;
+  }
 }

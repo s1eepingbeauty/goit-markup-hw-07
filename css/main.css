@@ -337,43 +337,6 @@ template {
   display: none;
 }
 
-.header, .header-address, .header-list, .header-mail-link, .header-tel-link, .navigation, .navigation-list, .features-list, .what-we-do-list, .team-card-list, .team-social-links, .clients-list, .footer, .social-links-list {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.backdrop, .header-mail-link, .header-tel-link, .hero, .features-list-item div, .team-social-links, .team-social-links-item-link, .clients-list, .clients-list-item-link, .footer-form-btn, .social-links-item-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.hero-title, .features-list-item-title, .what-we-do-item-title, .footer-form-title, .social-links-title {
-  text-transform: uppercase;
-}
-
-.header-list, .navigation-list, .features-list, .what-we-do-list, .team-card-list, .team-social-links, .clients-list, .footer-address-list, .social-links-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.header, .features-content, .what-we-do-content, .team-content, .clients-content, .footer {
-  margin: 0 auto;
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.features-list-item p {
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.7em;
-  letter-spacing: 0.03em;
-  color: #757575;
-}
-
 *,
 *::before,
 *::after {
@@ -389,7 +352,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 400;
-  line-height: 1.14em;
+  line-height: 1.143;
   letter-spacing: 0.03em;
   color: #212121;
   background-color: #ffffff;
@@ -421,8 +384,55 @@ footer {
   padding-bottom: 60px;
 }
 
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.description {
+  color: #757575;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+}
+
 .accent {
   color: #2196f3;
+}
+
+.active-page ::after {
+  display: block;
+  content: '';
+  width: 100%;
+  height: 4px;
+  background-color: #2196f3;
+  border-radius: 2px;
+  margin-top: 29px;
 }
 
 .hide-item {
@@ -477,16 +487,6 @@ footer {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
   padding: 10px 32px;
-}
-
-.active-page ::after {
-  display: block;
-  content: '';
-  width: 100%;
-  height: 4px;
-  background-color: #2196f3;
-  border-radius: 2px;
-  margin-top: 29px;
 }
 
 .backdrop {
@@ -548,7 +548,7 @@ footer {
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-weight: 700;
-  line-height: 1.15em;
+  line-height: 1.15;
   letter-spacing: 0.03em;
   margin-bottom: 30px;
 }
@@ -613,7 +613,7 @@ footer {
   font-family: "Roboto", sans-serif;
   font-size: 12px;
   font-weight: 400;
-  line-height: 1.14em;
+  line-height: 1.143;
   letter-spacing: 0.03em;
   color: #2196f3;
   transform: translateY(calc(-100% - 4px));
@@ -682,7 +682,7 @@ footer {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 700;
-  line-height: 1.9em;
+  line-height: 1.9;
   letter-spacing: 0.06em;
   color: #ffffff;
   background-color: #2196f3;
@@ -698,6 +698,9 @@ footer {
 .header {
   height: 80px;
   border-bottom: 1px solid #ececec;
+}
+
+.header div {
   justify-content: space-between;
 }
 
@@ -713,7 +716,7 @@ footer {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 500;
-  line-height: 1.14em;
+  line-height: 1.143;
   letter-spacing: 0.02em;
   color: #757575;
   margin-top: 32px;
@@ -741,7 +744,7 @@ footer {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 500;
-  line-height: 1.14em;
+  line-height: 1.143;
   letter-spacing: 0.02em;
   align-items: center;
   margin-top: 32px;
@@ -769,7 +772,7 @@ footer {
   font-family: "Roboto", sans-serif;
   font-size: 44px;
   font-weight: 900;
-  line-height: 1.36em;
+  line-height: 1.364;
   letter-spacing: 0.06em;
   color: #ffffff;
   margin-bottom: 30px;
@@ -793,7 +796,7 @@ footer {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 700;
-  line-height: 1.14em;
+  line-height: 1.143;
   letter-spacing: 0.03em;
   margin-bottom: 10px;
 }
@@ -862,14 +865,17 @@ footer {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 500;
-  line-height: 1.19em;
+  line-height: 1.188;
   letter-spacing: 0.03em;
   margin-bottom: 10px;
 }
 
 .team-card-profession {
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
-  line-height: 1.19em;
+  font-weight: 400;
+  line-height: 1.188;
+  letter-spacing: 0.03em;
   color: #757575;
   margin-bottom: 16px;
 }
@@ -939,7 +945,7 @@ footer {
   font-family: "Raleway", sans-serif;
   font-size: 26px;
   font-weight: 700;
-  line-height: 1.19em;
+  line-height: 1.192;
   letter-spacing: 0.03em;
   color: #ffffff;
 }
@@ -960,7 +966,7 @@ footer {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 400;
-  line-height: 1.7em;
+  line-height: 1.714;
   letter-spacing: 0.03em;
   color: #ffffff;
 }
@@ -969,7 +975,7 @@ footer {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 400;
-  line-height: 1.7em;
+  line-height: 1.714;
   letter-spacing: 0.03em;
   color: #ffffff99;
 }
@@ -978,7 +984,7 @@ footer {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 700;
-  line-height: 1.14em;
+  line-height: 1.143;
   letter-spacing: 0.03em;
   color: #ffffff;
   margin-bottom: 20px;
@@ -996,7 +1002,7 @@ footer {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 700;
-  line-height: 1.86em;
+  line-height: 1.875;
   letter-spacing: 0.06em;
   color: #ffffff;
   background-color: #2196f3;
@@ -1033,7 +1039,7 @@ footer {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 700;
-  line-height: 1.14em;
+  line-height: 1.143;
   letter-spacing: 0.03em;
   color: #ffffff;
   margin-bottom: 20px;

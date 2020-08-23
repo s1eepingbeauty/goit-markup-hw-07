@@ -1,32 +1,23 @@
 .what-we-do {
-    margin-top: 0;
-    &-content {
-        @extend %container;
+  margin-top: 0;
+  &-item {
+    position: relative;
+    width: 370px;
+
+    &-title {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+      @include font($fw: 700, $lh: 1.15em);
+      color: $text-light-theme-color;
+      background: rgba(47, 48, 58, 0.8);
+      padding-top: 27px;
+      padding-bottom: 27px;
     }
 
-    &-list {
-        @extend %list, %flex-wrap;
+    &:not(:last-child) {
+      margin-right: 30px;
     }
-
-    &-item {
-        position: relative;
-        width: 370px;
-
-        &-title {
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            text-align: center;
-            @extend %uppercase;
-            @include font($fw: 700, $lh: 1.15em);
-            color: $text-light-theme-color;
-            background: rgba(47, 48, 58, 0.8);
-            padding-top: 27px;
-            padding-bottom: 27px;
-        }
-
-        &:not(:last-child) {
-            margin-right: 30px;
-        }
-    }
+  }
 }
